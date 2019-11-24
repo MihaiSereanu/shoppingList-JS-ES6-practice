@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="main.css">
+  <title>Shopping List</title>
+</head>
+<body>
+  <div class="wrapper animate">
+    <h1>Shopping List</h1>
+
+    <div class="addbox">
+      <form class="add_fields">
+        <div class="field">
+          <label for="itemName">Item</label>
+          <input type="text" id="itemName" required>
+        </div>
+        <div class="field">
+          <label for="itemQuant">Quantity</label>
+          <input type="text" id="itemQuant" required>
+        </div>
+        <input type="submit" value="Add item" id="submitItem"></input>
+      </form>
+    </div>
+
+    <table class="itemList">
+      <thead>
+        <tr>
+          <th id='unique'>UniqueID</th>
+          <th>Name</th>
+          <th>Quantity</th>
+        </tr>
+      </thead>
+      <tbody id="shopping-list"></tbody>
+    </table>
+
+  </div>
+
+<script src="Display.js"></script>
+<script src="Storage.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
